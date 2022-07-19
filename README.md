@@ -52,6 +52,12 @@ Required packages (Debian 9 / Ubuntu 18)
 apt-get install whois dirmngr multistrap reprepro binutils squashfs-tools genisoimage make linux-headers-$(uname -r) zip aufs-dkms aufs-tools aufs-dev
 ```
 
+make sure you have key trusted.gpg on this directory /etc/apt/trusted.gpg if not or there's problem with you key please run :
+
+```
+apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 40976EAF437D05B5
+```
+
 clone the repository, go to SbcOS and run:
 
 ```
